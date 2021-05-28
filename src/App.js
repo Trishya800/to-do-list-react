@@ -1,43 +1,36 @@
-import Form from "./Form";
 
+import Form from "./Form";
+import Tasks from "./Tasks";
+import Buttons from "./Buttons";
+import Section from "./Section";
+import Header from "./Header";
+import Container from "./Container";
+
+const tasks = [
+  { id: 1, content: "przejść na Reacta", done: false },
+  { id: 2, content: "zjeść obiad", done: true },
+];
+
+const hideDoneTasks = false;
 
 function App() {
   return (
-    <main className="container">
+    <Container>
 
-    <section>
-        <h1 className="headline">Lista zadań</h1>
-    </section>
+      <Header title="Lista zadań"/>
 
-    <section className="section">
+      <Section
+      title="Dodaj nowe zadanie"
+      body={<Form />}
+      />
 
-        <header className="section__header">
-            <h2 className="section__title">Dodaj nowe zadanie</h2>
-       </header>
+    <Section
+    title="Lista zadań"
+    body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+    extraHeaderContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+    />
 
-        <div className="section__body">
-
-            <Form />
-
-        </div>
-
-    </section>
-
-    <section className="section">
-
-        <header className="section__header">
-            <h2 className="section__title">Lista zadań</h2>
-            <div className="buttons js-buttonsTop"></div>
-        </header>
-
-        <div className="section__body">
-            <ul className="section__tasks js-tasks"></ul>
-            <span className="buttons js-buttonsBottom"></span>
-        </div>
-
-    </section>
-
-</main>
+    </Container>
   );
 }
 
