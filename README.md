@@ -5,7 +5,7 @@ Simple to-do list with the ability to mark up or delete completed tasks.
 * Author: **Patrycja Lesniak**
 * May 28, 2021
 
-![Screen]("%PUBLIC_URL%/to-do-list-react-image.jpg")    <
+![Screen]("%PUBLIC_URL%/to-do-list-react-readme-image.jpg")    <
 ## How to use:
 1. Click on the active field.
 2. Enter a task and press the "Add task" button.
