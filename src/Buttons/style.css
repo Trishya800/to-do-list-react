@@ -6,7 +6,7 @@
 .buttons__button {
   color: teal;
   border: none;
-  margin-left: 10px;
+  margin: 0 20px 0 0;
   transition: color 0.5s;
   background-color: transparent;
 }
