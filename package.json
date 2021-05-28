@@ -2,7 +2,7 @@
   "name": "to-do-list-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://trishya800.github.io/to-do-list-react/",
+  "homepage": "https://patrycja-i-lesniak.github.io/to-do-list-react/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
