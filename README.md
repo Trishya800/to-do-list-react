@@ -23,7 +23,7 @@ Project is created with:
 * Semantic HTML;
 * CSS;
 * Grid;
-* Flexbox;
+* Flex;
 * Media queries;
 * BEM;
 * ES6+;
