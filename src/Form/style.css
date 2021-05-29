@@ -5,7 +5,7 @@
   margin: 20px;
 }
 
-@media (max-width: 498px) {
+@media (max-width: 610px) {
   .form {
     grid-template-columns: 1fr;
   }

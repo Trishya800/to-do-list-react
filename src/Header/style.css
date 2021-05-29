@@ -3,7 +3,7 @@
   padding-top: 20px;
 }
 
-@media (max-width: 498px) {
+@media (max-width: 790px) {
   .header {
     text-align: center;
   }

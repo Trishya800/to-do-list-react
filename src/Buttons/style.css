@@ -1,20 +1,32 @@
 .buttons {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right:10px;
+}
+
+@media (max-width: 790px) {
+.buttons {
+  margin-right:0;
+}
+}
+
+@media (max-width: 610px) {
+  .buttons {
+    flex-direction: column;
+  }
 }
 
 .buttons__button {
   color: teal;
   border: none;
-  margin: 0 20px 0 0;
   transition: color 0.5s;
   background-color: transparent;
 }
 
-@media (max-width: 498px) {
+
+@media (max-width: 790px) {
   .buttons__button {
-    flex-basis: 100%;
-    margin: 0 20px 10px 20px;
+    margin: 10px;
   }
 }
 
