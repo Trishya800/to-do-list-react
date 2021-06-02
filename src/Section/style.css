@@ -1,6 +1,5 @@
 .section {
   display: grid;
-  grid-auto-rows: auto auto;
   margin: 10px;
   box-shadow: 0 0 5px hsl(0, 0%, 86%);
   background-color: white;
@@ -34,7 +33,5 @@
 }
 
 .section__tasks {
-  display: grid;
-  grid-template-rows: 1fr auto auto;
   padding-left: 0px;
 }
