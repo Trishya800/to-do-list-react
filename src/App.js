@@ -31,7 +31,6 @@ function App() {
           <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
         }
       />
-
     </Container>
   );
 }

@@ -18,7 +18,7 @@ Simple to-do list with the ability to mark up or delete completed tasks.
 7. You can show hidden tasks by clicking on the "Pokaż ukończone" button.
 8. If you want to mark all tasks as completed, click the "Zaznacz wszystkie" button.
 9. If you want to deselect all tasks, click the button "Odznacz wszystkie".
-10. You can remove all tasks from the list by clicking the button "Usuń wszystkie".
+10. You can remove all tasks from the list by clicking the button "Usuń wszystkie"
 
 
 ## Technologies
