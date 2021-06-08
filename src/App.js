@@ -50,8 +50,10 @@ function App() {
   };
 
   const deleteAllTasks = () => {
-    setTasks(tasks => [...tasks.splice(0, tasks.lenght)]);
-    };
+    setTasks(tasks => [
+      ...tasks.splice(0, tasks.lenght)
+    ]);
+  };
 
   return (
     <Container>
