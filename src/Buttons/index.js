@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
+const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone, deleteAllTasks }) => (
 
     <div className="buttons" > {
         tasks.length > 0 && (
@@ -20,7 +20,9 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
                     {hideDone ? "Odznacz" : "Zaznacz"} wszystkie
                 </button>
 
-                <button class="buttons__button">
+                <button 
+                onClick={deleteAllTasks}
+                class="buttons__button">
                     Usuń wszystkie
                 </button>
             </>

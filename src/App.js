@@ -49,6 +49,10 @@ function App() {
     ]);
   };
 
+  const deleteAllTasks = () => {
+    setTasks(tasks => [...tasks.splice(0, tasks.lenght)]);
+    };
+
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -76,6 +80,7 @@ function App() {
             hideDone={hideDone}
             toggleHideDone={toggleHideDone}
             setAllDone={setAllDone}
+            deleteAllTasks={deleteAllTasks}
           />
         }
       />
