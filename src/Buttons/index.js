@@ -17,7 +17,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone, deleteAllTasks }
                     className="buttons__button"
                     onClick={setAllDone}
                     disabled={tasks.every(({ done }) => done)} >
-                    {hideDone ? "" : "Zaznacz"} wszystkie
+                    {hideDone ? "" : "Zaznacz wszystkie"} 
                 </button>
 
                 <button
