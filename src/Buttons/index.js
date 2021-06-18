@@ -22,7 +22,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone, deleteAllTasks }
 
                 <button
                     onClick={deleteAllTasks}
-                    class="buttons__button">
+                    className="buttons__button">
                     Usuń wszystkie
                 </button>
             </>
