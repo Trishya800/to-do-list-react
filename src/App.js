@@ -51,11 +51,9 @@ function App() {
   };
 
   const deleteAllTasks = () => {
-    setTasks(tasks => [
-      ...tasks.splice(0, tasks.lenght)
-    ]);
+    setTasks([]);
   };
-
+ 
   return (
     <Container>
       <Header title="Lista zadań" />
