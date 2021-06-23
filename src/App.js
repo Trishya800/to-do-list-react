@@ -7,7 +7,7 @@ import Header from "./Header";
 import Container from "./Container";
 import { useTasks } from "./useTasks";
 import { ThemeProvider } from "styled-components";
-import {theme} from "./Theme"
+import { theme } from "./Theme"
 
 
 function App() {
