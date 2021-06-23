@@ -1,6 +1,6 @@
 import {OptionalButtons, Button} from "./styled"
 
-const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone, deleteAllTasks }) => (
+const Buttons = ({ tasks, hideDone, toggleHideDone, selectAll, toggleSelectAll, deleteAllTasks }) => (
 
     <OptionalButtons > {
         tasks.length > 0 && (
@@ -12,9 +12,9 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone, deleteAllTasks }
                 </Button>
 
                 <Button
-                    onClick={setAllDone}
+                    onClick={toggleSelectAll}
                     disabled={tasks.every(({ done }) => done)} >
-                    {hideDone ? "" : "Zaznacz wszystkie"}
+                    {selectAll ? "Odznacz" : "Zaznacz"} wszystkie
                 </Button>
 
                 <Button
