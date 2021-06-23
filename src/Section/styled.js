@@ -8,11 +8,11 @@ export const SectionContent = styled.section`
 `;
 
 export const SectionHeader = styled.header`
-display: grid;
+    display: grid;
     grid-template-columns: auto auto;
     border-bottom: 3px solid rgb(241 240 242);
 
-    @media (max-width: 790px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
         grid-template-columns: 1fr;
     }
 `;
@@ -24,7 +24,7 @@ export const SectionBody = styled.div`
 export const SectionTitle = styled.h2`
     margin-left: 20px;
 
-    @media (max-width: 790px) {
+    @media (max-width: 768px) {
         text-align: center;
         margin-left: 0;
     }

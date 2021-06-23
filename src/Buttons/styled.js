@@ -1,35 +1,34 @@
-import styled, { css } from "styled-components";
+import styled, { css } from "styled-components"
 
 export const OptionalButtons = styled.div`
     display: flex;
     justify-content: flex-end;
     margin-right: 20px;
 
-    @media (max-width: 790px){
+    @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
         justify-content: center;
-        margin-right: 0;
     }
 
-    @media (max-width: 610px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.xsmall}px) {
         flex-direction: column;
     }
 `;
 
 export const Button = styled.button`
-    color: teal;
+    color: ${({ theme }) => theme.colors.buttonsColor};
     border: none;
     transition: color 0.5s;
     background-color: transparent;
 
-    @media (max-width: 790px){
+    @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
         margin: 10px;
     }
 
     &:hover {
-        color: hsl(180, 100%, 35%);
+        color: ${({ theme }) => theme.colors.buttonsColorHover};
     }
 
     ${({ disabled }) => disabled && css`
-        color: rgb(203, 203, 203);
+        color: ${({ theme }) => theme.colors.primaryColor};
     `}
 `;

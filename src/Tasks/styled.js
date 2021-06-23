@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const List = styled.ul`
     list-style: none;
-    margin: 0;
+    margin: 0 0 20px;
     padding: 0;
 `;
 
@@ -13,7 +13,7 @@ export const Item = styled.li`
     align-items: center;
     margin: 0 20px;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.primaryColor};
 
     ${({ hidden }) => hidden && css`
       display: none;
@@ -39,28 +39,28 @@ export const Button = styled.button`
     padding: 0;
 
       ${({ toggleDone }) => toggleDone && css`
-          background-color: green;
+          background-color: ${({ theme }) => theme.colors.doneIconsColor};
       `}
 
         &:hover  {
-          background-color: hsl(120, 100%, 35%);
+          background-color: ${({ theme }) => theme.colors.doneIconsColorHover};
           transition: 1s;
         }
 
         &:active {
-          background-color: hsl(120, 100%, 45%);
+          background-color: ${({ theme }) => theme.colors.doneIconsColorActive};
           transition: 1s;
         }
 
       ${({ remove }) => remove && css`
-        background-color: crimson;
+        background-color: ${({ theme }) => theme.colors.deleteIconsColor};
 
         &:hover {
-          background-color: hsl(348, 83%, 57%);
+          background-color: ${({ theme }) => theme.colors.deleteIconsColorHover};
         }
 
         &:active {
-          background-color: hsl(348, 83%, 67%);
+          background-color: ${({ theme }) => theme.colors.deleteIconsColorActive};
           transition: 1s;
         }
       `}
