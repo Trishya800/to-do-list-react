@@ -7,10 +7,12 @@ export const OptionalButtons = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
         justify-content: center;
+        margin-right: 0px;
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.xsmall}px) {
         flex-direction: column;
+        margin-right: 0px;
     }
 `;
 
@@ -21,7 +23,7 @@ export const Button = styled.button`
     background-color: transparent;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
-        margin: 10px;
+        margin: 5px;
     }
 
     &:hover {
