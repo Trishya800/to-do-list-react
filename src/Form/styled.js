@@ -14,7 +14,7 @@ export const FormContent = styled.form`
 export const FormInput = styled.input`
     padding: 10px;
     border: 1px solid ${({ theme }) => theme.colors.primaryColor};
-    color: ${({ theme }) => theme.colors.primaryColor};
+    color: teal;
     outline-color: ${({ theme }) => theme.colors.primaryColor};
     outline-width: thin;
 `;
