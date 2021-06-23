@@ -1,22 +1,31 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+// import { useTasks } from "./useTask"
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
+import {useLocalStorageState} from "./useLocalStorageState";
+
 
 function App() {
+  const [tasks, setTasks] = useLocalStorageState("tasks", "");
+  
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) || []);
-
-  useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
+
+  // const {
+  //   tasks,
+  //   removeTask,
+  //   toggleTaskDone,
+  //   setAllDone,
+  //   addNewTask,
+  //   deleteAllTasks,
+  // } = useTasks();
 
   const removeTask = (id) => {
     setTasks(tasks => tasks.filter(task => task.id !== id));
@@ -53,7 +62,7 @@ function App() {
   const deleteAllTasks = () => {
     setTasks([]);
   };
- 
+
   return (
     <Container>
       <Header title="Lista zadań" />
