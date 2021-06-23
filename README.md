@@ -1,9 +1,9 @@
-# SIMPLE TO-DO LIST
+# SIMPLE TO-DO LIST in REACT
 
 Simple to-do list with the ability to mark up or delete completed tasks.
 
 * Author: **Patrycja Leśniak**
-* May 28, 2021
+* May 28, 2021. In progress.
 
 ![Screen](public/toDoListReactReadmeImage.jpg)
 
@@ -30,7 +30,9 @@ Project is created with:
 * Media queries;
 * BEM;
 * ES6+;
-* React JS.
+* React JS;
+* Styled components;
+* Custom hooks.
 
 ## Demo
 https://patrycja-i-lesniak.github.io/to-do-list-react/
