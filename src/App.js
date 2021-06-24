@@ -17,7 +17,7 @@ function App() {
   };
 
   const [selectAll, setSelectAll] = useState(false);
-  const toggleAllTasks = () => {
+  const toggleSelectAll = () => {
     setSelectAll(selectAll => !selectAll);
   };
 
@@ -48,7 +48,6 @@ function App() {
               hideDone={hideDone}
               removeTask={removeTask}
               toggleTaskDone={toggleTaskDone}
-              toggleAllTasks={toggleAllTasks}
             />
           }
           extraHeaderContent={
@@ -57,7 +56,7 @@ function App() {
               hideDone={hideDone}
               toggleHideDone={toggleHideDone}
               selectAll={selectAll}
-              toggleAllTasks={toggleAllTasks}
+              toggleSelectAll={toggleSelectAll}
               setAllDone={setAllDone}
               setAllNotDone={setAllNotDone}
               deleteAllTasks={deleteAllTasks}
