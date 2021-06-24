@@ -12,16 +12,22 @@ import { theme } from "./Theme"
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
+
+  const [selectAll, setSelectAll] = useState(false);
+  const toggleAllTasks = () => {
+    setSelectAll(selectAll => !selectAll);
+  };
+
 
   const {
     tasks,
     removeTask,
     toggleTaskDone,
     setAllDone,
+    setAllNotDone,
     addNewTask,
     deleteAllTasks,
   } = useTasks();
@@ -42,6 +48,7 @@ function App() {
               hideDone={hideDone}
               removeTask={removeTask}
               toggleTaskDone={toggleTaskDone}
+              toggleAllTasks={toggleAllTasks}
             />
           }
           extraHeaderContent={
@@ -49,14 +56,16 @@ function App() {
               tasks={tasks}
               hideDone={hideDone}
               toggleHideDone={toggleHideDone}
+              selectAll={selectAll}
+              toggleAllTasks={toggleAllTasks}
               setAllDone={setAllDone}
+              setAllNotDone={setAllNotDone}
               deleteAllTasks={deleteAllTasks}
             />
           }
         />
       </Container>
     </ThemeProvider>
-
   );
 };
 

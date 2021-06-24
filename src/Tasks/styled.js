@@ -20,7 +20,6 @@ export const Item = styled.li`
     `}
 `;
 
-
 export const Content = styled.span`
     word-break: break-all;
 
