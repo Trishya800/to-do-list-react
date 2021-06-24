@@ -12,7 +12,7 @@ export const useTasks = () => {
             if (task.id === id) {
                 return {
                     ...task,
-                    done: !task.done
+                    done: !task.done,
                 };
             }
 
@@ -24,6 +24,13 @@ export const useTasks = () => {
         setTasks(tasks => tasks.map(task => ({
             ...task,
             done: true,
+        })));
+    };
+
+    const setAllNotDone = () => {
+        setTasks(tasks => tasks.map(task => ({
+            ...task,
+            done: false,
         })));
     };
 
@@ -47,7 +54,8 @@ export const useTasks = () => {
         removeTask,
         toggleTaskDone,
         setAllDone,
+        setAllNotDone,
         addNewTask,
-        deleteAllTasks
+        deleteAllTasks,
     };
 };

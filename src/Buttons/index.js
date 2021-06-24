@@ -1,8 +1,8 @@
-import {OptionalButtons, Button} from "./styled"
+import { Wrapper, Button } from "./styled";
 
-const Buttons = ({ tasks, hideDone, toggleHideDone, selectAll, toggleSelectAll, deleteAllTasks }) => (
+const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone, selectAll, deleteAllTasks }) => (
 
-    <OptionalButtons > {
+    <Wrapper > {
         tasks.length > 0 && (
             <>
                 <Button
@@ -12,9 +12,10 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, selectAll, toggleSelectAll, 
                 </Button>
 
                 <Button
-                    onClick={toggleSelectAll}
-                    disabled={tasks.every(({ done }) => done)} >
-                    {selectAll ? "Odznacz" : "Zaznacz"} wszystkie
+                    onClick={setAllDone}
+                    disabled={tasks.every(({ done }) => done)}
+                >
+                    {selectAll ? "" : "Zaznacz wszystkie"}
                 </Button>
 
                 <Button
@@ -24,7 +25,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, selectAll, toggleSelectAll, 
                 </Button>
             </>
         )}
-    </OptionalButtons>
+    </Wrapper>
 
 );
 

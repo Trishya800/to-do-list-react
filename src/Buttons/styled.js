@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
 
-export const OptionalButtons = styled.div`
+export const Wrapper = styled.div`
     display: flex;
     justify-content: flex-end;
     margin-right: 20px;
@@ -32,5 +32,6 @@ export const Button = styled.button`
 
     ${({ disabled }) => disabled && css`
         color: ${({ theme }) => theme.colors.primaryColor};
+        transition: color 0s;
     `}
 `;

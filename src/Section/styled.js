@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const SectionContent = styled.section`
+export const Wrapper = styled.section`
     display: grid;
     margin: 10px;
      box-shadow: 0 0 5px hsl(0, 0%, 86%);
     background-color: white;
 `;
 
-export const SectionHeader = styled.header`
+export const Header = styled.header`
     display: grid;
     grid-template-columns: auto auto;
     border-bottom: 3px solid rgb(241 240 242);
@@ -21,7 +21,7 @@ export const SectionBody = styled.div`
     background-color: white;
 `;
 
-export const SectionTitle = styled.h2`
+export const Title = styled.h2`
     margin-left: 20px;
 
     @media (max-width: 768px) {
