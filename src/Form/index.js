@@ -12,7 +12,8 @@ const Form = ({ addNewTask }) => {
             return;
         }
         addNewTask(contentTrimmed);
-        setNewTaskContent("");
+        setNewTaskContent("")
+        inputRef.current.focus();
     }
     return (
         <FormWrapper
@@ -25,9 +26,7 @@ const Form = ({ addNewTask }) => {
                 placeholder="Co jest do zrobienia?"
                 onChange={({ target }) => setNewTaskContent(target.value)}
             />
-            <FormButton
-                onClick={() => inputRef.current.focus()}
-            >
+            <FormButton>
                 Dodaj zadanie
             </FormButton>
         </FormWrapper>
