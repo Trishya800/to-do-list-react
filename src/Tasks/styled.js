@@ -13,7 +13,7 @@ export const Item = styled.li`
     align-items: center;
     margin: 0 20px;
     padding: 10px;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.primaryColor};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.alto};
 
     ${({ hidden }) => hidden && css`
       display: none;
@@ -36,31 +36,29 @@ export const Button = styled.button`
     font-family: "Material Icons Outlined";
     font-size: 16px;
     padding: 0;
+    transition: 0.5s filter;
 
       ${({ toggleDone }) => toggleDone && css`
-          background-color: ${({ theme }) => theme.colors.doneIconsColor};
+          background-color: ${({ theme }) => theme.colors.japaneseLaurel};
       `}
 
         &:hover  {
-          background-color: ${({ theme }) => theme.colors.doneIconsColorHover};
-          transition: 1s;
+          filter: brightness(110%);
         }
 
         &:active {
-          background-color: ${({ theme }) => theme.colors.doneIconsColorActive};
-          transition: 1s;
+          filter: brightness(130%);
         }
 
       ${({ remove }) => remove && css`
-        background-color: ${({ theme }) => theme.colors.deleteIconsColor};
+        background-color: ${({ theme }) => theme.colors.crimson};
 
         &:hover {
-          background-color: ${({ theme }) => theme.colors.deleteIconsColorHover};
+          filter: brightness(110%);
         }
 
         &:active {
-          background-color: ${({ theme }) => theme.colors.deleteIconsColorActive};
-          transition: 1s;
+          filter: brightness(130%);
         }
       `}
 `;

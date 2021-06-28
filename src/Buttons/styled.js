@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 export const Wrapper = styled.div`
     display: flex;
@@ -17,21 +17,23 @@ export const Wrapper = styled.div`
 `;
 
 export const Button = styled.button`
-    color: ${({ theme }) => theme.colors.buttonsColor};
+    color: ${({ theme }) => theme.colors.teal};
     border: none;
     transition: color 0.5s;
     background-color: transparent;
+    cursor: pointer;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
         margin: 5px;
     }
 
     &:hover {
-        color: ${({ theme }) => theme.colors.buttonsColorHover};
+       filter: brightness(120%);
     }
 
-    ${({ disabled }) => disabled && css`
-        color: ${({ theme }) => theme.colors.primaryColor};
-        transition: color 0s;
-    `}
+    &:disabled {
+        color: ${({ theme }) => theme.colors.alto};
+        cursor: none;
+        filter: brightness(100%);
+    }
 `;

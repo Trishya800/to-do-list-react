@@ -13,27 +13,26 @@ export const FormWrapper = styled.form`
 
 export const FormInput = styled.input`
     padding: 10px;
-    border: 1px solid ${({ theme }) => theme.colors.primaryColor};
+    border: 1px solid ${({ theme }) => theme.colors.alto};
     color: teal;
-    outline-color: ${({ theme }) => theme.colors.primaryColor};
+    outline-color: ${({ theme }) => theme.colors.alto};
     outline-width: thin;
 `;
 
 export const FormButton = styled.button`
-    background: ${({ theme }) => theme.colors.buttonsColor};
+    background: ${({ theme }) => theme.colors.teal};
     color: white;
     padding: 10px;
     border: none;
+    transition: 0.5s filter;
 
     &:hover {
-        background: ${({ theme }) => theme.colors.buttonsColorHover};
-        transform: scale(1.05);
-        transition: 0.5s;
+        filter: brightness(110%);
+        transform: scale(1.01);
     }
 
     &:active {
-        background: ${({ theme }) => theme.colors.buttonsColorActive};
+        filter: brightness(120%); 
         transform: scale(1.01);
-        transition: 0.5s;
     }
 `;
