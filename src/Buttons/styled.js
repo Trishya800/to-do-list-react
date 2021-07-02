@@ -12,7 +12,6 @@ export const Wrapper = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakpoints.xsmall}px) {
         flex-direction: column;
-        margin-right: 0px;
     }
 `;
 
