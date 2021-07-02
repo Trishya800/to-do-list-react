@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-      background-color: rgb(241 240 242);
+      background-color: ${({ theme }) => theme.colors.concerte};
       font-family: "Montserrat", sans-serif;
       font-size: smaller;
     }

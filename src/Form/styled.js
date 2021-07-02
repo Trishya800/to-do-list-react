@@ -14,14 +14,14 @@ export const FormWrapper = styled.form`
 export const FormInput = styled.input`
     padding: 10px;
     border: 1px solid ${({ theme }) => theme.colors.alto};
-    color: teal;
+    color: ${({ theme }) => theme.colors.teal};
     outline-color: ${({ theme }) => theme.colors.alto};
     outline-width: thin;
 `;
 
 export const FormButton = styled.button`
     background: ${({ theme }) => theme.colors.teal};
-    color: white;
+    color: ${({ theme }) => theme.colors.white};
     padding: 10px;
     border: none;
     transition: 0.5s filter;

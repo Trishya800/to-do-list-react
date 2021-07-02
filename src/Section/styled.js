@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Wrapper = styled.section`
     display: grid;
     margin: 10px;
-     box-shadow: 0 0 5px hsl(0, 0%, 86%);
-    background-color: white;
+    box-shadow: 0 0 5px hsl(0, 0%, 86%);
+    background-color: ${({ theme }) => theme.colors.white};
 `;
 
 export const Header = styled.header`
@@ -18,7 +18,7 @@ export const Header = styled.header`
 `;
 
 export const SectionBody = styled.div`
-    background-color: white;
+    background-color: ${({ theme }) => theme.colors.white};
 `;
 
 export const Title = styled.h2`

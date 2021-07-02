@@ -4,6 +4,8 @@ export const theme = {
         teal: "#008080",
         japaneseLaurel: "#097B09",
         crimson: "#DC143C",
+        concerte: "#F2F2F2",
+        white: "#FFFFFF",
     },
     breakpoints: {
         xsmall: 576,

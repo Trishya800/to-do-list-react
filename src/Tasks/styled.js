@@ -31,7 +31,7 @@ export const Content = styled.span`
 export const Button = styled.button`
     width: 30px;
     height: 30px;
-    color: white;
+    color: ${({ theme }) => theme.colors.white};
     border: none;
     font-family: "Material Icons Outlined";
     font-size: 16px;
