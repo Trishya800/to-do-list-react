@@ -1,4 +1,4 @@
-import { useLocalStorageState } from "./useLocalStorageState";
+import { useLocalStorageState } from "../../features/tasks/useLocalStorageState";
 
 export const useTasks = () => {
     const [tasks, setTasks] = useLocalStorageState("tasks", []);
