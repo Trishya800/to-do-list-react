@@ -3,7 +3,7 @@
 Simple to-do list with the ability to mark up or delete completed tasks.
 
 * Author: **Patrycja Leśniak**
-* May 28, 2021. In progress.
+* Work in progress.
 
 ![Screen](public/toDoListReactReadmeImage.jpg)
 
@@ -32,7 +32,8 @@ Project is created with:
 * ES6+;
 * React JS;
 * Styled components;
-* Custom hooks.
+* Custom hooks;
+* Redux.
 
 ## Demo
 https://patrycja-i-lesniak.github.io/to-do-list-react/
