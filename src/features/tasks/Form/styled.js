@@ -32,7 +32,7 @@ export const FormButton = styled.button`
     }
 
     &:active {
-        filter: brightness(120%); 
+        filter: brightness(120%);
         transform: scale(1.01);
     }
 `;
