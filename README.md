@@ -33,7 +33,8 @@ Project is created with:
 * React JS;
 * Styled components;
 * Custom hooks;
-* Redux.
+* Redux;
+* Redux-Saga.
 
 ## Demo
 https://patrycja-i-lesniak.github.io/to-do-list-react/
