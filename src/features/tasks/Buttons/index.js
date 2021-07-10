@@ -9,6 +9,7 @@ import {
     selectAreTasksEmpty,
     selectIsEveryTaskDone,
     selectIsEveryTaskNotDone,
+    fetchExampleTasks,
 } from "../tasksSlice";
 
 const Buttons = () => {
@@ -19,6 +20,9 @@ const Buttons = () => {
     const dispatch = useDispatch();
     return (
         <Wrapper >
+            <Button onClick={() => dispatch(fetchExampleTasks())}>
+                Pobierz przykładowe zadania
+            </Button>
             {!areTasksEmpty && (
                 <>
                     <Button
