@@ -10,7 +10,21 @@ import {
     selectIsEveryTaskDone,
     selectIsEveryTaskNotDone,
     fetchExampleTasks,
+    selectLoading,
 } from "../../TasksPage/tasksSlice";
+
+export const DownloadButton = () => {
+    const loading = useSelector(selectLoading);
+    const dispatch = useDispatch();
+    return (
+        <Button
+            onClick={() => dispatch(fetchExampleTasks())}
+            disabled={loading}
+        >
+            {loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
+        </Button>
+    )
+};
 
 const Buttons = () => {
     const areTasksEmpty = useSelector(selectAreTasksEmpty);
@@ -20,9 +34,7 @@ const Buttons = () => {
     const dispatch = useDispatch();
     return (
         <Wrapper >
-            <Button onClick={() => dispatch(fetchExampleTasks())}>
-                Pobierz przykładowe zadania
-            </Button>
+
             {!areTasksEmpty && (
                 <>
                     <Button
