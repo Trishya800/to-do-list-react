@@ -38,7 +38,7 @@ const Buttons = () => {
                         onClick={() => dispatch(setAllNotDone())}
                         disabled={isEveryTaskNotDone}
                     >
-                        Odznacz wszystkie"
+                        Odznacz wszystkie
                     </Button>
 
                     <Button
