@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import {Button} from "../../Button";
 
 import {
-    selectTasks,
+    selectHideDone,
     toggleHideDone,
     setAllDone,
     setAllNotDone,
@@ -17,7 +17,7 @@ const Buttons = () => {
     const areTasksEmpty = useSelector(selectAreTasksEmpty);
     const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
     const isEveryTaskNotDone = useSelector(selectIsEveryTaskNotDone)
-    const { hideDone } = useSelector(selectTasks);
+    const hideDone = useSelector(selectHideDone);
     const dispatch = useDispatch();
     return (
         <Wrapper >
