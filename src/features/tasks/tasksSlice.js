@@ -39,8 +39,8 @@ const tasksSlice = createSlice({
             }
         },
 
-        deleteAllTasks: ({ tasks }, { payload }) => {
-            tasks.splice(payload);
+        deleteAllTasks: ({ tasks }, { payload: task }) => {
+            tasks.splice(task);
         },
 
         fetchExampleTasks: state => {
@@ -55,7 +55,7 @@ const tasksSlice = createSlice({
         setError: state => {
             state.loading = false;
         },
-},
+    },
 });
 
 export const {
@@ -71,6 +71,8 @@ export const {
     setError,
 } = tasksSlice.actions;
 
+export const selectLoading = state => state.tasks.loading;
+
 const selectTasksState = state => state.tasks;
 
 export const selectTasks = state => selectTasksState(state).tasks;
@@ -78,6 +80,8 @@ export const selectHideDone = state => selectTasksState(state).hideDone;
 export const selectAreTasksEmpty = state => selectTasks(state).lenght === 0;
 export const selectIsEveryTaskDone = state => selectTasks(state).every(({ done }) => done);
 export const selectIsEveryTaskNotDone = state => selectTasks(state).every(({ done }) => !done);
+
+
 
 export const getTaskById = (state, taskId) =>
     selectTasks(state).find(({ id }) => id === taskId);
@@ -89,9 +93,11 @@ export const selectTasksByQuery = (state, query) => {
         return tasks;
     }
     return (
-        tasks.filter(({ content }) => content.includes(query.trim())));
+        tasks.filter(({ content }) =>
+            content.toUpperCase().includes(query.trim().toUpperCase()))
+    );
 };
 
-export const selectLoading = state => state.tasks.loading;
+
 
 export default tasksSlice.reducer;

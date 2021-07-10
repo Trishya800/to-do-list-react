@@ -11,7 +11,7 @@ import {
     selectAreTasksEmpty,
     selectIsEveryTaskDone,
     selectIsEveryTaskNotDone
-} from "../../TasksPage/tasksSlice";
+} from "../../tasksSlice";
 
 const Buttons = () => {
     const areTasksEmpty = useSelector(selectAreTasksEmpty);

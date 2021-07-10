@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { FormWrapper, FormButton } from "./styled";
 import Input from "../../Input";
-import { addTask } from "../tasksSlice";
+import { addTask } from "../../tasksSlice";
 
 const Form = () => {
     const [newTaskContent, setNewTaskContent] = useState("");
