@@ -5,6 +5,7 @@ export const Wrapper = styled.section`
     margin: 10px;
     box-shadow: 0 0 5px hsl(0, 0%, 86%);
     background-color: ${({ theme }) => theme.colors.white};
+    line-height: 1.5;
 `;
 
 export const Header = styled.header`
@@ -20,6 +21,7 @@ export const Header = styled.header`
 export const SectionBody = styled.div`
     background-color: ${({ theme }) => theme.colors.white};
     padding: 20px;
+    text-align: justify;
 `;
 
 export const Title = styled.h2`
