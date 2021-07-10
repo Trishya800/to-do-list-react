@@ -1,9 +1,10 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
     list-style: none;
-    margin: 0 0 20px;
-    padding: 0;
+    padding-left: 0;
+    margin: 0px;
 `;
 
 export const Item = styled.li`
@@ -11,8 +12,7 @@ export const Item = styled.li`
     grid-template-columns: auto 1fr auto;
     grid-gap: 20px;
     align-items: center;
-    margin: 0 20px;
-    padding: 10px;
+    padding: 10px 10px;
     border-bottom: 1px solid ${({ theme }) => theme.colors.alto};
 
     ${({ hidden }) => hidden && css`
@@ -20,13 +20,28 @@ export const Item = styled.li`
     `}
 `;
 
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.mineShaft};
+     transition: color 0.5s;
+
+    &:hover  {
+        color: ${({ theme }) => theme.colors.teal};
+      }
+
+    &:active {
+        filter: brightness(130%);
+      }
+`;
+
 export const Content = styled.span`
     word-break: break-all;
 
     ${({ done }) => done && css`
-      text-decoration-line: line-through;
+        text-decoration-line: line-through;
     `}
 `;
+
 
 export const Button = styled.button`
     width: 30px;

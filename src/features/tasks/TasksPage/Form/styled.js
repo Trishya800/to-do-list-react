@@ -4,7 +4,6 @@ export const FormWrapper = styled.form`
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 10px;
-    margin: 20px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
         grid-template-columns: 1fr;

@@ -19,6 +19,7 @@ export const Header = styled.header`
 
 export const SectionBody = styled.div`
     background-color: ${({ theme }) => theme.colors.white};
+    padding: 20px;
 `;
 
 export const Title = styled.h2`
