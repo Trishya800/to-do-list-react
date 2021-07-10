@@ -1,7 +1,8 @@
 import { nanoid } from "@reduxjs/toolkit";
 import { useState, useRef } from "react";
 import { useDispatch } from "react-redux";
-import { FormWrapper, FormInput, FormButton } from "./styled";
+import { FormWrapper, FormButton } from "./styled";
+import Input from "../../Input";
 import { addTask } from "../tasksSlice";
 
 const Form = () => {
@@ -29,7 +30,7 @@ const Form = () => {
         <FormWrapper
             onSubmit={onFormSubmit}
         >
-            <FormInput
+            <Input
                 ref={inputRef}
                 value={newTaskContent}
                 required
