@@ -42,18 +42,21 @@ const tasksSlice = createSlice({
         deleteAllTasks: ({ tasks }, { payload }) => {
             tasks.splice(payload);
         },
-        
+
         fetchExampleTasks: state => {
             state.loading = true;
-         },
+        },
 
         setTasks: (state, { payload: tasks }) => {
             state.tasks = tasks;
             state.loading = false;
         },
-    },
+
+        setError: state => {
+            state.loading = false;
+        },
 },
-);
+});
 
 export const {
     addTask,
@@ -65,6 +68,7 @@ export const {
     deleteAllTasks,
     fetchExampleTasks,
     setTasks,
+    setError,
 } = tasksSlice.actions;
 
 const selectTasksState = state => state.tasks;
