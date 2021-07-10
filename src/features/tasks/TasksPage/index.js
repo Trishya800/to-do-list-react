@@ -4,6 +4,7 @@ import Buttons from "../TasksPage/Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
+import {Search} from "./Search";
 
 export const TasksPage = ()  => {
   return (
@@ -12,6 +13,10 @@ export const TasksPage = ()  => {
       <Section
         title="Dodaj nowe zadanie"
         body={<Form />}
+      />
+      <Section
+        title="Wyszukiwarka"
+        body={<Search />}
       />
       <Section
         title="Lista zadań"
