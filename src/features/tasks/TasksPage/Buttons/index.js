@@ -1,5 +1,7 @@
-import { Wrapper, Button } from "./styled";
+import { Wrapper } from "../../Button";
 import { useSelector, useDispatch } from "react-redux";
+import {Button} from "../../Button";
+
 import {
     selectTasks,
     toggleHideDone,
@@ -8,23 +10,8 @@ import {
     deleteAllTasks,
     selectAreTasksEmpty,
     selectIsEveryTaskDone,
-    selectIsEveryTaskNotDone,
-    fetchExampleTasks,
-    selectLoading,
+    selectIsEveryTaskNotDone
 } from "../../TasksPage/tasksSlice";
-
-export const DownloadButton = () => {
-    const loading = useSelector(selectLoading);
-    const dispatch = useDispatch();
-    return (
-        <Button
-            onClick={() => dispatch(fetchExampleTasks())}
-            disabled={loading}
-        >
-            {loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
-        </Button>
-    )
-};
 
 const Buttons = () => {
     const areTasksEmpty = useSelector(selectAreTasksEmpty);

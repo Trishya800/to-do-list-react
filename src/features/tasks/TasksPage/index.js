@@ -4,18 +4,24 @@ import Buttons from "../TasksPage/Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
-import {Search} from "./Search";
-import {DownloadButton} from "./Buttons";
+import { Search } from "./Search";
+import { DownloadButton } from "./DownloadButton";
+import { Wrapper } from "../Button";
 
-export const TasksPage = ()  => {
+export const TasksPage = () => {
   return (
     <Container>
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
         body={<Form />}
-        extraHeaderContent={<DownloadButton/>}
-      /> 
+        extraHeaderContent={
+          <Wrapper>
+            <DownloadButton />
+          </Wrapper>
+        }
+
+      />
       <Section
         title="Wyszukiwarka"
         body={<Search />}
