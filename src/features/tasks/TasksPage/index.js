@@ -1,5 +1,5 @@
 import Form from "../TasksPage/Form";
-import TasksList from "../TasksPage/TasksList";
+import TaskList from "./TaskList";
 import Buttons from "../TasksPage/Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
@@ -15,7 +15,7 @@ export const TasksPage = ()  => {
       />
       <Section
         title="Lista zadań"
-        body={<TasksList />}
+        body={<TaskList />}
         extraHeaderContent={<Buttons />}
       />
     </Container>
