@@ -1,9 +1,9 @@
 import { Main } from "./styled.js";
 
-const Container = ({ children }) => (
+export const Container = ({ children }) => {
+return (
     <Main>
         {children}
     </Main>
 );
-
-export default Container;
+};

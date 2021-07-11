@@ -1,13 +1,13 @@
 import Input from "../../Input";
 import { Wrapper } from "./styled";
-import {useQueryParameter, useReplaceQueryParameter } from "../queryParameters";
+import { useQueryParameter, useReplaceQueryParameter } from "../queryParameters";
 import searchQueryParamName from "../searchQueryParamName";
 
 export const Search = () => {
     const query = useQueryParameter(searchQueryParamName);
     const replaceQueryParameter = useReplaceQueryParameter();
 
-    const onInputChange = ({target}) => {
+    const onInputChange = ({ target }) => {
         replaceQueryParameter({
             key: searchQueryParamName,
             value: target.value.trim() !== "" ? target.value : undefined,
@@ -17,10 +17,10 @@ export const Search = () => {
     return (
         <Wrapper>
             <Input
-            placeholder="Filtruj zadania"
-            value={query || ""}
-            onChange={onInputChange}
-        />
+                placeholder="Filtruj zadania"
+                value={query || ""}
+                onChange={onInputChange}
+            />
         </Wrapper>
     );
 };

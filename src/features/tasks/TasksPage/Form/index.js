@@ -5,7 +5,7 @@ import { FormWrapper, FormButton } from "./styled";
 import Input from "../../Input";
 import { addTask } from "../../tasksSlice";
 
-const Form = () => {
+export const Form = () => {
     const [newTaskContent, setNewTaskContent] = useState("");
     const inputRef = useRef(null);
     const dispatch = useDispatch();
@@ -43,5 +43,3 @@ const Form = () => {
         </FormWrapper>
     )
 };
-
-export default Form;

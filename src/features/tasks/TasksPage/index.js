@@ -1,9 +1,9 @@
-import Form from "../TasksPage/Form";
-import TaskList from "./TaskList";
-import Buttons from "../TasksPage/Buttons";
-import Section from "../../../common/Section";
-import Header from "../../../common/Header";
-import Container from "../../../common/Container";
+import { Form } from "../TasksPage/Form";
+import { TaskList } from "./TaskList";
+import { Buttons } from "../TasksPage/Buttons";
+import { Section } from "../../../common/Section";
+import { Header } from "../../../common/Header";
+import { Container } from "../../../common/Container";
 import { Search } from "./Search";
 import { DownloadButton } from "./DownloadButton";
 import { Wrapper } from "../Button";
