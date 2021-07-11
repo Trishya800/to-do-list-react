@@ -23,7 +23,7 @@ export const Item = styled.li`
 export const StyledLink = styled(Link)`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.mineShaft};
-     transition: color 0.5s;
+    transition: color 0.5s;
 
     &:hover  {
         color: ${({ theme }) => theme.colors.teal};
