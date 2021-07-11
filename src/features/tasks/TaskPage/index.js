@@ -11,7 +11,7 @@ export const TaskPage = () => {
 
   return (
     <Container>
-        <Header title="Szczegóły zadania" />
+        <Header title="Szczegóły zadania:" />
         <Section
         title={task ? task.content : "Nie znaleziono zadania"}
         body={
