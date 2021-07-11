@@ -7,7 +7,7 @@ function* fetchExampleTasksHandler() {
     try {
         yield delay(1000);
         const exampleTasks = yield call(getExampleTasks);
-        yield put(setTasks(exampleTasks))
+        yield put(setTasks(exampleTasks));
     } catch (error) {
         yield put(setError());
         yield call(alert, "Coś poszło nie tak!");
