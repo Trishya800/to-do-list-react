@@ -8,7 +8,7 @@ import { NavigationMenu } from "./common/NavigationMenu"
 
 export const App = () => {
     return (
-        <HashRouter basename="/to-do-list-react">
+        <HashRouter>
             <nav>
                 <NavigationMenu />
                 <Switch>
