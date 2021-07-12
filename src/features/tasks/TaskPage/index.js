@@ -14,11 +14,11 @@ export const TaskPage = () => {
       <Header title="Szczegóły zadania:" />
       <Section
         title={task ? task.content : "Nie znaleziono zadania"}
-        body={
+        body={!!task && (
           <>
             <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
           </>
-        }
+        )}
       />
     </Container>
   )
