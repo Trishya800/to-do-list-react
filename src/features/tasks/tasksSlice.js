@@ -48,12 +48,12 @@ const tasksSlice = createSlice({
             state.loading = true;
         },
 
-        setTasks: (state, { payload: tasks }) => {
+        fetchExampleTasksSuccess: (state, { payload: tasks }) => {
             state.tasks = tasks;
             state.loading = false;
         },
 
-        setError: state => {
+        fetchExampleTasksError: state => {
             state.loading = false;
         },
     },
