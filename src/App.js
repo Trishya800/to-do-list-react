@@ -9,7 +9,6 @@ import { NavigationMenu } from "./common/NavigationMenu"
 export const App = () => {
     return (
         <HashRouter>
-            <nav>
                 <NavigationMenu />
                 <Switch>
                     <Route path="/zadania/:id">
@@ -25,7 +24,6 @@ export const App = () => {
                         <Redirect to="/zadania" />
                     </Route>
                 </Switch>
-            </nav>
         </HashRouter>
-    )
+    );
 };
