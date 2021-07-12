@@ -1,6 +1,6 @@
 import { List, StyledNavLink, Item } from "./styled";
 
-export const NavigationMenu = () => {
+export const Navigation = () => {
     return (
         <>
             <nav>

@@ -4,12 +4,12 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import { TasksPage } from "./features/tasks/TasksPage";
 import { TaskPage } from "./features/tasks/TaskPage";
 import { AuthorPage } from "./features/tasks/authorPage";
-import { NavigationMenu } from "./common/NavigationMenu"
+import { Navigation } from "./common/Navigation";
 
 export const App = () => {
     return (
         <HashRouter>
-                <NavigationMenu />
+                <Navigation />
                 <Switch>
                     <Route path="/zadania/:id">
                         <TaskPage />
