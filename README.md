@@ -18,7 +18,10 @@ Simple to-do list with the ability to mark up or delete completed tasks.
 7. You can show hidden tasks by clicking on the "Pokaż ukończone" button.
 8. If you want to mark all tasks as completed, click the "Zaznacz wszystkie" button.
 9. If you want to deselect all tasks, click the button "Odznacz wszystkie".
-10. You can remove all tasks from the list by clicking the button "Usuń wszystkie"
+10. You can remove all tasks from the list by clicking the button "Usuń wszystkie".
+11. You can download example tasks by clicking on the button "Pobierz przykładowe zadania".
+12. You can easily search for a job.
+13. Click on the task and go to the details.
 
 
 ## Technologies
@@ -34,7 +37,8 @@ Project is created with:
 * Styled components;
 * Custom hooks;
 * Redux;
-* Redux-Saga.
+* Redux-Saga
+* Redux-toolkit.
 
 ## Demo
 https://patrycja-i-lesniak.github.io/to-do-list-react/
