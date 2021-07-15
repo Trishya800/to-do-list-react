@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export const List = styled.ul`
     background-color: ${({ theme }) => theme.colors.teal};
     margin: auto;
-    padding: 20px;
+    padding: 30px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  margin-right: 10px;
+  margin-right: 20px;
   color: white;
 `;
 
@@ -24,5 +24,6 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({ activeClassName }))`
 
 &.${activeClassName} {
     font-weight: 900;
+    transform: scale(1.05);
 }
 `;
