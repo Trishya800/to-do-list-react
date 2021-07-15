@@ -68,8 +68,8 @@ export const {
     setAllNotDone,
     deleteAllTasks,
     fetchExampleTasks,
-    setTasks,
-    setError,
+    fetchExampleTasksSuccess,
+    fetchExampleTasksError,
 } = tasksSlice.actions;
 
 export const selectLoading = state => state.tasks.loading;
