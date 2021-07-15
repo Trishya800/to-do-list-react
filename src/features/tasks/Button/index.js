@@ -18,7 +18,6 @@ export const Wrapper = styled.div`
 export const Button = styled.button`
     color: ${({ theme }) => theme.colors.teal};
     border: none;
-    transition: color 0.5s;
     background-color: transparent;
     cursor: pointer;
 
@@ -27,12 +26,15 @@ export const Button = styled.button`
     }
 
     &:hover {
-       filter: brightness(120%);
+        filter: brightness(120%);
+        transition: color 0.5s;
+        transform: scale(1.05);
     }
-
+    
     &:disabled {
         color: ${({ theme }) => theme.colors.alto};
         cursor: none;
         filter: brightness(100%);
+        transform: none;
     }
 `;
