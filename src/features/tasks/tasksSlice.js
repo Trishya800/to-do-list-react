@@ -88,7 +88,7 @@ export const getTaskById = (state, taskId) =>
 export const selectTasksByQuery = (state, query) => {
     const tasks = selectTasks(state);
 
-    if (!query || query.trim() === "") {
+    if (!query || query.trim()) {
         return tasks;
     }
     return (
