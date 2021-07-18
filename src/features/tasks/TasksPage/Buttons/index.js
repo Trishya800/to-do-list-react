@@ -10,13 +10,11 @@ import {
     deleteAllTasks,
     selectAreTasksEmpty,
     selectIsEveryTaskDone,
-    selectIsEveryTaskUndone
 } from "../../tasksSlice";
 
 export const Buttons = () => {
     const areTasksEmpty = useSelector(selectAreTasksEmpty);
     const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
-    const isEveryTaskUndone = useSelector(selectIsEveryTaskUndone);
     const hideDone = useSelector(selectHideDone);
 
     const dispatch = useDispatch();
@@ -40,7 +38,7 @@ export const Buttons = () => {
 
                     <Button
                         onClick={() => dispatch(setAllUndone())}
-                        disabled={isEveryTaskUndone}
+                        disabled={!isEveryTaskDone}
                     >
                         Odznacz wszystkie
                     </Button>
