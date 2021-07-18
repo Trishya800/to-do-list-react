@@ -34,7 +34,7 @@ const tasksSlice = createSlice({
             }
         },
 
-        setAllNotDone: ({ tasks }) => {
+        setAllUndone: ({ tasks }) => {
             for (const task of tasks) {
                 task.done = false;
             }
@@ -65,7 +65,7 @@ export const {
     toggleTaskDone,
     removeTask,
     setAllDone,
-    setAllNotDone,
+    setAllUndone,
     deleteAllTasks,
     fetchExampleTasks,
     fetchExampleTasksSuccess,

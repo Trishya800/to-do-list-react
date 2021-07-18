@@ -6,7 +6,7 @@ import {
     selectHideDone,
     toggleHideDone,
     setAllDone,
-    setAllNotDone,
+    setAllUndone,
     deleteAllTasks,
     selectAreTasksEmpty,
     selectIsEveryTaskDone,
@@ -40,7 +40,7 @@ export const Buttons = () => {
                     </Button>
 
                     <Button
-                        onClick={() => dispatch(setAllNotDone())}
+                        onClick={() => dispatch(setAllUndone())}
                         disabled={isEveryTaskNotDone}
                     >
                         Odznacz wszystkie
