@@ -2,7 +2,6 @@ import { List, StyledNavLink, Item } from "./styled";
 
 export const Navigation = () => {
     return (
-        <>
             <nav>
                 <List>
                     <Item>
@@ -13,6 +12,5 @@ export const Navigation = () => {
                     </Item>
                 </List>
             </nav>
-        </>
     );
 };
