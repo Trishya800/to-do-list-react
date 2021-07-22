@@ -12,8 +12,8 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  margin-right: 20px;
-  color: white;
+    margin-right: 20px;
+    color: white;
 `;
 
 const activeClassName = "active";
@@ -22,8 +22,8 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({ activeClassName }))`
     color: white;
     text-decoration: none;
 
-&.${activeClassName} {
-    font-weight: 900;
-    transform: scale(1.05);
+    &.${activeClassName} {
+        font-weight: 900;
+        transform: scale(1.05);
 }
 `;

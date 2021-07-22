@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr;
 `;

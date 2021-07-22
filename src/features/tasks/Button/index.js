@@ -20,6 +20,7 @@ export const Button = styled.button`
     border: none;
     background-color: transparent;
     cursor: pointer;
+    transition: color 0.5s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
         margin: 5px;
@@ -27,13 +28,12 @@ export const Button = styled.button`
 
     &:hover {
         filter: brightness(120%);
-        transition: color 0.5s;
         transform: scale(1.05);
     }
     
     &:disabled {
         color: ${({ theme }) => theme.colors.alto};
-        cursor: none;
+        cursor: not-allowed;
         filter: brightness(100%);
         transform: none;
     }

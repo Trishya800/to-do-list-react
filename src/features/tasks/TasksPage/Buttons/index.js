@@ -20,7 +20,7 @@ export const Buttons = () => {
     const dispatch = useDispatch();
 
     return (
-        <Wrapper >
+        <Wrapper>
             {!areTasksEmpty && (
                 <>
                     <Button
