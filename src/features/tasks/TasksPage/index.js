@@ -21,7 +21,7 @@ export const TasksPage = () => {
         }
       />
       <Section
-        title="Wyszukiwarka"
+        title="Wyszukaj zadanie"
         body={<Search />}
       />
       <Section
