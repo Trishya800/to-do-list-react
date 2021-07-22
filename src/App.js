@@ -3,7 +3,7 @@ import { HashRouter } from "react-router-dom";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { TasksPage } from "./features/tasks/TasksPage";
 import { TaskPage } from "./features/tasks/TaskPage";
-import { AuthorPage } from "./features/AuthorPage";
+import { AuthorPage } from "./features/author/AuthorPage";
 import { Navigation } from "./common/Navigation";
 
 export const App = () => {
@@ -17,7 +17,7 @@ export const App = () => {
                 <Route path="/zadania">
                     <TasksPage />
                 </Route>
-                <Route path="./features/AuthorPage">
+                <Route path="/autor">
                     <AuthorPage />
                 </Route>
                 <Route path="/">
