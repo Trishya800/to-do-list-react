@@ -14,7 +14,7 @@ function* fetchExampleTasksHandler() {
         yield put(fetchExampleTasksSuccess(exampleTasks));
     } catch (error) {
         yield put(fetchExampleTasksError());
-        yield call(alert, "Coś poszło nie tak!");
+        yield call(alert, "Houtston, mamy problem. Spokojne! Zajmiemy się tym a tymczasem wróć na główną stronę.");
     }
 };
 
