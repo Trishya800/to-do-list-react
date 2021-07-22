@@ -40,8 +40,8 @@ const tasksSlice = createSlice({
             }
         },
 
-        deleteAllTasks: ({ tasks }, { payload: task }) => {
-            tasks.splice(task);
+        deleteAllTasks: state => {
+           state.tasks = [];
         },
 
         fetchExampleTasks: state => {
@@ -72,10 +72,9 @@ export const {
     fetchExampleTasksError,
 } = tasksSlice.actions;
 
-export const selectLoading = state => state.tasks.loading;
-
 const selectTasksState = state => state.tasks;
 
+export const selectLoading = state => selectTasksState(state).loading;
 export const selectTasks = state => selectTasksState(state).tasks;
 export const selectHideDone = state => selectTasksState(state).hideDone;
 export const selectAreTasksEmpty = state => selectTasks(state).lenght === 0;
