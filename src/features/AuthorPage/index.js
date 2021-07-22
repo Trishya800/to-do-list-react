@@ -1,10 +1,9 @@
-import { Container } from "../../../common/Container";
-import { Section } from "../../../common/Section";
-import { Header } from "../../../common/Header";
+import { Section } from "../../common/Section";
+import { Header } from "../../common/Header";
 
 export const AuthorPage = () => {
     return (
-        <Container>
+        <>
             <Header title="O mnie" />
             <Section
                 title="Cześć, mam na imię Patrycja!"
@@ -15,6 +14,6 @@ export const AuthorPage = () => {
                     </>
                 }
             />
-        </Container>
+        </>
     )
 };
