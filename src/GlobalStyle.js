@@ -14,6 +14,5 @@ export const GlobalStyle = createGlobalStyle`
     body {
       background-color: ${({ theme }) => theme.colors.concerte};
       font-family: "Montserrat", sans-serif;
-      font-size: smaller;
     }
 `;
